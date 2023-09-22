@@ -4,9 +4,8 @@ import numpy as np
 import prediction
 import joblib
 from combined_attributes_adder import CombinedAttributesAdder
+from sklearn.base import BaseEstimator, TransformerMixin
 
-
-st.image("https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",width =50,use_column_width=3)
 st.header('House prediction base in Californa Prices Values DataSet')
 st.write('Data Science Project')
 
@@ -43,4 +42,4 @@ with st.container():
         )
 
         result = prediction.predict(data)
-        st.write("The predicted value is of {:.1f} dlls".format(result[0]))
+        st.write("The predicted value is of {:.1f} usd".format(result[0]))

@@ -1,6 +1,6 @@
 import joblib
 
-def predict(data, model):
+def predict(data):
 
     model = joblib.load('random_fores_model.pkl')
 
